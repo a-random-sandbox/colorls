@@ -1,8 +1,8 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
+- package-ecosystem: "github-actions"
+  directories:
+  - /
   schedule:
-    interval: daily
-    time: "23:30"
+    interval: "weekly"  # .schedule_interval
   open-pull-requests-limit: 10
