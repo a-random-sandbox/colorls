@@ -1,8 +1,8 @@
 version: 2
 updates:
-- package-ecosystem: bundler
-  directory: "/"
+- package-ecosystem: "map[ecosystem:github-actions paths:[./.github/workflows/release-drafter.yml ./.github/workflows/ruby.yml]]"  # .msg.ecosystem
+  directories: # .msg.paths
+  - 0
   schedule:
-    interval: daily
-    time: "23:30"
+    interval: "weekly"  # .schedule_interval
   open-pull-requests-limit: 10
